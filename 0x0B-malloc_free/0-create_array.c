@@ -10,19 +10,19 @@
 
 char *create_array(unsigned int size, char c)
 {
-        char *ptr;
-        unsigned int x;
+	char *ptr;
+	unsigned int x;
 
-        if (size == 0)
-                return (NULL);
+	if (size == 0)
+		return (NULL);
 
-        ptr = (char *)malloc(size * sizeof(char));
+	ptr = (char *)malloc(size * sizeof(char));
 
-        if (ptr == 0)
-                return (NULL);
+	if (ptr == 0)
+		return (NULL);
 
-        for (x = 0; x < size; x++)
-                ptr[x] = c;
+	for (x = 0; x < size; x++)
+		ptr[x] = c;
 
-        return (ptr);
+	return (ptr);
 }
